@@ -1,5 +1,8 @@
 package com.david.restful_crud_db.ws;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "Products")
 public class Product {
 
     private int id;
