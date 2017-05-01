@@ -68,7 +68,7 @@ public class ProductDAO_IMP implements IProductDAO {
 
     @Override
     public Product Find(int id) {
-        return (Product)jdbcTemplate.query("select* from products where id=?", new RowMapper() {
+        return (Product)jdbcTemplate.query("select* from products where id="+id, new RowMapper() {
             @Override
             public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
 
